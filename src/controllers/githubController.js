@@ -146,17 +146,17 @@ export const getApiDocs = (req, res) => {
     message: "GitHub API Integration",
     endpoints: [
       {
-        path: "https://github-api-integration-bac-git-5397ed-hadungwrabrahmas-projects.vercel.app/github",
+        path: "/github",
         method: "GET",
         description: "Get GitHub user profile and repositories information",
       },
       {
-        path: "https://github-api-integration-bac-git-5397ed-hadungwrabrahmas-projects.vercel.app/github/:repoName",
+        path: "/github/:repoName",
         method: "GET",
         description: "Get detailed information about a specific repository",
       },
       {
-        path: "https://github-api-integration-bac-git-5397ed-hadungwrabrahmas-projects.vercel.app/github/github-api-integration-backend/:repoName/issues",
+        path: "/github/:repoName/issues",
         method: "POST",
         description: "Create a new issue in a repository",
         body: { title: "string (required)", body: "string (optional)" },
